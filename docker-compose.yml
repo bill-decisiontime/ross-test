@@ -1,0 +1,59 @@
+version: "2"
+services:
+  web:
+    build: ./docker/images/nginx
+    image: ross-test-nginx
+    container_name: ross-test-nginx
+    ports:
+      - '8001:80'
+    volumes_from:
+      - application
+    links:
+      - php
+    restart: always
+    depends_on:
+      - php
+      - db
+  php:
+    build: ./docker/images/php
+    image: ross-test-php
+    container_name: ross-test-php
+    depends_on:
+      - application
+    volumes_from:
+      - application
+    links:
+      - db
+    restart: always
+  db:
+    build: ./docker/images/mysql    
+    image: ross-test-mysql
+    container_name: ross-test-mysql
+    command: mysqld --sql_mode=""
+    volumes:
+      - ./docker/images/mysql:/docker-entrypoint-initdb.d
+    volumes_from:
+      - data
+    environment:
+      - MYSQL_ROOT_PASSWORD=master123    
+      - MYSQL_DATABASE=ross_test
+      - MYSQL_USER=master
+      - MYSQL_PASSWORD=master123
+    ports:
+      - "33064:3306"
+    restart: always       
+  data:
+    build: ./docker/images/data    
+    image: ross-test-data
+    container_name: ross-test-data
+    volumes:
+      - /var/lib/mysql
+    restart: always
+  application:
+    build: ./docker/images/application    
+    image: ross-test-application
+    container_name: ross-test-application
+    volumes:
+      - /var/versions
+      - ./:/var/versions/version-
+    restart: always
