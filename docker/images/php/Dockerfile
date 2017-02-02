@@ -6,17 +6,11 @@ ADD php.ini /usr/local/etc/php/php.ini
 ADD php-fpm.conf /usr/local/etc/php-fpm.conf
 
 # install extensions
-RUN sed --in-place 's/httpredir.debian.org/mirror.sov.uk.goscomb.net/' /etc/apt/sources.list && \
-  apt-get update && apt-get install -y --fix-missing \
-  cron \
-  git \
-  imagemagick \
-  php5-curl \
-  php5-mysql \
+RUN apt-get update && apt-get install -y \
   sudo \
-  unzip \
   vim \
-  wget \
+  && docker-php-ext-install mysqli \
+  && docker-php-ext-install mysql \
   # logs
   && mkdir /var/log/php5; chown -R www-data:www-data /var/log/php5; chmod -R 775 /var/log/php5 \
   && touch /var/log/php5/error.log \
