@@ -3,7 +3,6 @@ MAINTAINER Bill Morrison <bill.morrison@teamsolutionz.com>
 
 # Add necessary files
 ADD php.ini /usr/local/etc/php/php.ini
-ADD php-fpm.conf /usr/local/etc/php-fpm.conf
 
 # install extensions
 RUN apt-get update && apt-get install -y \
