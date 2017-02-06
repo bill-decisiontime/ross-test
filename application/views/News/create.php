@@ -1,3 +1,6 @@
+//This is the View for creating the news. It was written using a CodeIgnitor
+//tutorial found here:- https://codeigniter.com/userguide2/tutorial/static_pages.html.
+
 <h2>Create a news item</h2>
 
 <?php echo validation_errors(); ?>

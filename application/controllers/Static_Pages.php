@@ -1,3 +1,6 @@
+//This is the controller for getting displaying the news. It was written
+//using a CodeIgnitor tutorial found here:- https://codeigniter.com/userguide2/tutorial/static_pages.html.
+
 <?php
 
 class Static_Pages extends CI_Controller

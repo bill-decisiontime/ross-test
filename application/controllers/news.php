@@ -1,3 +1,6 @@
+//This is the controller for getting News to and from the database. It was written
+//using a CodeIgnitor tutorial found here:- https://codeigniter.com/userguide2/tutorial/static_pages.html.
+
 <?php
 class news extends CI_Controller {
 
