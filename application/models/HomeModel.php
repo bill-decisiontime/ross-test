@@ -1,10 +1,14 @@
 <?php
 
-class Home_Model extends CI_Model{
+//This is the Model for getting data from the database "test". It was written 
+//using a YT tutorial found here:- https://youtu.be/IOZqRgOgSu4.
 
-public function getData(){
-    $query = $this->db->get('Cars');
-    return $query -> result();
+class HomeModel extends CI_Model
+{
+
+    public function getData()
+    {
+        $query = $this->db->get('test');
+        return $query->result();
+    }
 }
-
- ?>
