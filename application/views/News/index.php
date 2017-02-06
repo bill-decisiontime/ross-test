@@ -1,5 +1,7 @@
-//This is the View for displaying different articles in the news. It was written using a 
+<!--
+//This is the View for displaying different articles in the news. It was written using a
 //CodeIgnitor tutorial found here:- https://codeigniter.com/userguide2/tutorial/static_pages.html.
+-->
 
 <?php foreach ($news as $news_item): ?>
 
