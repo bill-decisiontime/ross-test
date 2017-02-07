@@ -1,7 +1,7 @@
 <?php
 
-//This is the Controller for getting data from the database "test". It was written
-//using a YT tutorial found here:- https://youtu.be/IOZqRgOgSu4.
+//This is the Controller for getting the model to get data from the database "test".
+//It was written using a YT tutorial found here:- https://youtu.be/IOZqRgOgSu4.
 
 class HomeController extends CI_Controller
 {
