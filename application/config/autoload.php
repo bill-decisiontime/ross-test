@@ -52,7 +52,11 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array('cart', 'database');
+//Auto load for the languages class
+$autoload['libraries'] = array('database', 'form_validation', 'session');
+
+//Auto load for the shopping cart Class.
+//$autoload['libraries'] = array('cart', 'database');
 
 
 /*
@@ -64,7 +68,7 @@ $autoload['libraries'] = array('cart', 'database');
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('url', 'form');
+$autoload['helper'] = array('url', 'form', 'html');
 
 
 /*
