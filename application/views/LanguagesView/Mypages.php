@@ -45,7 +45,7 @@
             </tr>
             <tr>
                 <td id = "message"><?php echo $this->lang->line('message'); ?></td>
-                <td><?php echo form_textarea($data_message);?></td>
+                <td><?php echo form_textarea($data_messsage);?></td>
             </tr>
             <tr>
                 <td></td>

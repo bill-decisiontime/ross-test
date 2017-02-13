@@ -10,7 +10,6 @@
 
   <title>"Example</title>
   <meta name="description" content="The HTML5 Herald">
-  <link rel="shortcut icon" href="/favicon.ico" />
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">

@@ -5,7 +5,7 @@
 <title>CodeIgniter Shopping Cart</title>
 
 <link href="<?php echo base_url(); ?>application/assets/css/core.css" media="screen" rel="stylesheet" type="text/css" />
-<link rel="shortcut icon" href="/favicon.ico" />
+
 <script type="text/javascript" src="<?php echo base_url(); ?>application/assets/js/jquery-1.3.2.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>application/assets/js/core.js"></script>
 </head>
