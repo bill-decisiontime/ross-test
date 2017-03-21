@@ -3,6 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Welcome to CodeIgniter</title>
+	<!-- <link rel="shortcut icon" href=" "> -->
+	<!-- <link rel="icon" href="data:;base64,iVBORw0KGgo="> -->
+	<!-- <link rel="icon" type="image/png" href="http://www.delagua.org/assets/images/aboutus/contactus/contact-form-icon-blue.png"> -->
 
 	<style type="text/css">
 

@@ -1,0 +1,80 @@
+#sortable
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+.wrap
+    {
+        color: black;
+        font-family:  Sans-serif;
+        margin-left: 12px;
+    }
+
+.ui-state-default
+    {
+        margin: 5px 30% 5px 10px;
+        padding: 2%;
+        padding-left: 1.5em;
+        font-size: 1.4em;
+        height: 18px;
+        width:35%
+    }
+
+.delete
+    {
+        background-color: grey;
+        position: absolute;
+        left: 37px;
+        padding: 3px 5px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+    }
+
+.list_text
+    {
+        padding-left: 5px;
+    }
+
+
+
+/* Styling for the Name and Email input boxes */
+
+#mainform
+    {
+    width:40%;
+    position: relative;
+    padding-top:20px;
+    font-family:sans-serif;
+    padding: 5px;
+    }
+
+    input{
+    width:250px;
+    height:30px;
+    margin-top:10px;
+    border-radius:3px;
+    padding:2px;
+    box-shadow:0 1px 1px 0 #a9a9a9;
+    margin:10px
+    }
+    input[type=button]{
+    background-color:#0B87AA;
+    border:1px solid #fff;
+    font-family:sans-serif;
+    font-weight:700;
+    font-size:18px;
+    color:#fff;
+    width:100%;
+    }
+    span{
+    color:green
+    }
+    #form-contact div
+    {
+    color:red;
+    font-size:14px
+    }

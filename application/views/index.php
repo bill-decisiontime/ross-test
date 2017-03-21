@@ -3,7 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>CodeIgniter Shopping Cart</title>
-
+<!-- <link rel="shortcut icon" href=""> -->
+<!-- <link rel="icon" href="data:;base64,iVBORw0KGgo="> -->
+<!-- <link rel="icon" type="image/png" href="http://www.delagua.org/assets/images/aboutus/contactus/contact-form-icon-blue.png"> -->
 <link href="<?php echo base_url(); ?>application/assets/css/core.css" media="screen" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript" src="<?php echo base_url(); ?>application/assets/js/jquery-1.3.2.min.js"></script>
