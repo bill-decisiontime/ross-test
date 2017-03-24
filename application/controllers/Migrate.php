@@ -1,5 +1,6 @@
 <?php
-
+// Controller for running migrations from CLI
+// EXAMPLE: php index.php migrate version 1
 class Migrate extends CI_Controller
 {
     public function __construct()
@@ -26,8 +27,6 @@ class Migrate extends CI_Controller
 
     public function version( $version )
     {
-        
-        echo $version;
         $migration = $this->migration->version( $version );
 
         if( !$migration )
